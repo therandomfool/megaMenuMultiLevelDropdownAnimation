@@ -105,8 +105,8 @@ body {
     left: 0;
     width: 80vw;
     top: 80px;
-    opacity: 1;
-    /* visibility: hidden; */
+    opacity: 0;
+    visibility: hidden;
     transition: all 0.3s ease;
 }
 
@@ -118,6 +118,82 @@ body {
     gap: 1rem;
     width: 100%;
     justify-content: space-between;
+}
+
+.blog .content {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.content .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 3rem;
+}
+
+.content .col .img-wrapper {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 20vw;
+    overflow: hidden;
+}
+
+.content .col .img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.content .col .img {
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.content .col .img-wrapper:hover img {
+    transform: scale(1.1);
+}
+
+.content .col h2 {
+    color: #ff652f;
+    font-size: 1.2rem;
+    line-height: 3rem;
+    font-weight: bold;
+}
+
+.content .col p {
+    line-height: 1.2rem;
+
+}
+
+.content .col .mega-links {
+    border-left: 1px solid #1a3246;
+}
+
+.content .col .read-more {
+    display: inline-block;
+    padding-top:  1rem;
+    color: #427dad;
+    transition: color 0.3s ease;
+}
+
+.col .mega-links li,
+.col .mega-links li a 
+{
+    padding: 0 1rem;
+}
+
+.menu-items li:hover .mega-menu {
+    top: 50px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.content .col .read-more:hover {
+    color: #ff652f;
 }
 
 /* section */
