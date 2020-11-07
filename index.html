@@ -1,35 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mega Menu</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header class="header">
-        <a href="" class="logo">LOGO</a>
-        <nav>
-            <ul class="menu-items">
-                <li><a href="" class="menu-item">Home</a></li>
-                <li>
-                    <a href="" class="menu-item">Dropdown Menu</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#" class="menu-item">Item 1</a></li>
-                        <li><a href="#" class="menu-item">Item 2</a></li>
-                        <li><a href="#" class="menu-item">Item 3</a></li>
-                        <li><a href="#" class="menu-item">Item 4</a></li>
-                    </ul>
-                </li>
-                <li><a href="" class="menu-item">Mega Menu</a></li>
-                <li><a href="" class="menu-item">Blog</a></li>
-                <li><a href="" class="menu-item">About</a></li>
+      <a href="" class="logo">LOGO</a>
+      <nav>
+        <ul class="menu-items">
+          <li><a href="" class="menu-item">Home</a></li>
+          <li class="dropdown">
+            <a href="" class="menu-item">Dropdown Menu</a>
+            <ul class="dropdown-menu">
+              <li><a href="#" class="menu-item">Item 1</a></li>
+              <li><a href="#" class="menu-item">Item 2</a></li>
+              <li class="dropdown dropdown-right">
+                <a href="#" class="menu-item">
+                  Item 3
+                  <i class="fa fa-angle-right"></i>
+                </a>
+                <ul class="menu-right">
+                  <li><a href="#" class="menu-item">Item 3.1</a></li>
+                  <li><a href="#" class="menu-item">Item 3.2</a></li>
+                  <li><a href="#" class="menu-item">Item 3.3</a></li>
+                  <li><a href="#" class="menu-item">Item 3.4</a></li>
+                </ul>
+              </li>
+              <li><a href="#" class="menu-item">Item 4</a></li>
             </ul>
-        </nav>
+          </li>
+          <li><a href="" class="menu-item">Mega Menu</a>
+            <div class="mega-menu">
+                <div class="content">
+                    <div class="col">
+                        <section>
+                            <h2>Featured 1</h2>
+                            <a href="#" class="img-wrapper"><span class="img"><img src="https://picsum.photos/400?random=1" alt="Random Image"></span></a>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </section>
+                    </div>
+                    <div class="col">
+                        <section>
+                            <h2>Featured 2</h2>
+                            <ul class="mega-links">
+                                <li><a href="#">Item 1</a></li>
+                                <li><a href="#">Item 2</a></li>
+                                <li><a href="#">Item 3</a></li>
+                                <li><a href="#">Item 4</a></li>
+                                <li><a href="#">Item 5</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="col">
+                        <section>
+                            <h2>Featured 3</h2>
+                            <ul class="mega-links">
+                                <li><a href="#">Item 1</a></li>
+                                <li><a href="#">Item 2</a></li>
+                                <li><a href="#">Item 3</a></li>
+                                <li><a href="#">Item 4</a></li>
+                                <li><a href="#">Item 5</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="col">
+                        <section>
+                            <h2>Featured 4</h2>
+                            <ul class="mega-links">
+                                <li><a href="#">Item 1</a></li>
+                                <li><a href="#">Item 2</a></li>
+                                <li><a href="#">Item 3</a></li>
+                                <li><a href="#">Item 4</a></li>
+                                <li><a href="#">Item 5</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+            </div>    
+        </li>
+          <li><a href="" class="menu-item">Blog</a></li>
+          <li><a href="" class="menu-item">About</a></li>
+        </ul>
+      </nav>
     </header>
     <section class="section">
-        <h1>Mega Menu and Multi-Level Dropwown Menu</h1>
-    </section>     
-</body>
+      <h1>Mega Menu and Multi-Level Dropwown Menu</h1>
+    </section>
+  </body>
 </html>
